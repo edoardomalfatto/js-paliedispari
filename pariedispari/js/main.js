@@ -24,6 +24,7 @@ function sommaNumbers(num1 ,num2){
 //sommo numero dell'utente con numero del computer
 var numeriSommati = (sommaNumbers(randomNumbers(1,6), (secondoNumero)));
 console.log(randomNumbers(1,6));
+
 //se l'utente sceglie pari e la somma e pari , o l'utente sceglie dispari e la somma e dispari, allora l'utente ha vinto.
 if (pariDispari == "pari" && numeriSommati % 2 ==0) {
     alert("L'utente ha vinto");
