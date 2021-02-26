@@ -7,16 +7,16 @@ var parolaInserita = prompt("inserisci una parola");
 
 //creo due var con le lettere della parola
 function isPalindroma(parola) {
-    var parolaInseritaMin = parola.toLowerCase();
+    var parolaMin = parola.toLowerCase();
     var lettereOrdinate = [];
     var lettereContrario = [];
 
     //scorro la parola per creare i due var
-    for (i = 0; i < parolaInseritaMin.length; i++) {
-        lettereOrdinate.push(parolaInseritaMin.charAt(i));
+    for (i = 0; i < parolaMin.length; i++) {
+        lettereOrdinate.push(parolaMin.charAt(i));
     };
-    for (i = parolaInseritaMin.length - 1; i >= 0; i--) {
-        lettereContrario.push(parolaInseritaMin.charAt(i));
+    for (i = parolaMin.length - 1; i >= 0; i--) {
+        lettereContrario.push(parolaMin.charAt(i));
     };
 
     console.log(lettereOrdinate);
@@ -25,7 +25,7 @@ function isPalindroma(parola) {
     //se i due var sono uguali la parola è palindroma
     var arrayuguali = true;
 
-    for (i = 0; i < parolaInseritaMin.length; i++) {
+    for (i = 0; i < parolaMin.length; i++) {
         if (lettereContrario[i] != lettereOrdinate[i]) {
             arrayuguali = false;
         }
